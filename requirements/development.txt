@@ -114,6 +114,8 @@ click-repl==0.3.0
     # via
     #   -c requirements/base.txt
     #   celery
+clickhouse-sqlalchemy
+    # via apache-superset
 cmdstanpy==1.1.0
     # via prophet
 colorama==0.4.6
