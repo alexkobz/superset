@@ -49,6 +49,8 @@ fi
 # Make sure we have dev requirements installed
 #
 if [ -f "${REQUIREMENTS_LOCAL}" ]; then
+  echo "Installing gcc"
+  apt-get clean && apt-get update && apt-get remove -y gcc && apt-get install -y gcc
   echo "Installing local overrides at ${REQUIREMENTS_LOCAL}"
   uv pip install --no-cache-dir -r "${REQUIREMENTS_LOCAL}"
 else

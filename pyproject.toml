@@ -38,6 +38,7 @@ dependencies = [
     "celery>=5.3.6, <6.0.0",
     "click>=8.0.3",
     "click-option-group",
+    "clickhouse-connect>=0.6.8",
     "colorama",
     "croniter>=0.3.28",
     "cron-descriptor",
